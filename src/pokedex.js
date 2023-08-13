@@ -24,7 +24,6 @@ async function cambiarPagina(pagina) {
   actualizarTextoIndicePokemones('Cargando...');
 
   const listadoPokemones = await cargarPokemones(offset, limit);
-
   mostrarTotalPokemones(listadoPokemones.total);
   mostrarListadoPokemones(listadoPokemones.nombresPokemones, async (nombre) => {
     actualizarTextoAyuda('Cargando...');
