@@ -26,7 +26,7 @@ export function manejarCambioPagina(e, callbackPaginaSeleccionada = () => {}) {
   }
 }
 
-export default function mostrarPaginador(
+export function mostrarPaginador(
   totalPokemones,
   paginaActual,
   urlSiguiente,
